@@ -77,41 +77,6 @@
   padding: 10px;
   outline: 3px solid gray;
   border-radius: 10px;
-  position: relative;
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    transition: background-color .3s ease-in-out;
-  }
-
-  &.checked {
-    &::before {
-      inset: 0;
-      background-color: #a5a5a5;
-      height: 100%;
-      border-radius: 10px;
-      transition: background-color .3s ease-in-out;
-    }
-
-    &::after {
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      height: 3px;
-      background-color: #4d4d4d;
-      border-radius: 3px;
-      transition: background-color .3s ease-in-out;
-    }
-
-    .item__text {
-      transition: opacity .3s ease-in-out;
-      opacity: .5;
-    }
-  }
 
   &:not(:last-child) {
     margin-bottom: 15px;
